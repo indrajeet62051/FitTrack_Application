@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/member_back"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/libre_baskerville"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="dialogTitle"
+        android:textColor="@color/darkblue"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Batch Time"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:layout_marginTop="5dp"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupBatchTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:layout_marginRight="10dp"
+            android:id="@+id/batchTime1"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:text="7 to 8 PM"
+            android:layout_gravity="center_horizontal"
+            android:buttonTint="#00000000"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:textStyle="bold"
+            android:button="@drawable/time_background"
+            android:background="@drawable/time_background"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/batchTime2"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="9 to 10 PM"
+            android:buttonTint="@color/darkblue"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:textStyle="bold"
+            android:button="@drawable/time_background"
+            android:background="@drawable/time_background"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gym Adderess :\nFittrack Gym, vesu, surat"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"/>
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="pay"
+        android:backgroundTint="@color/darkblue"
+        android:background="@drawable/bg2"/>
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="Memberships are non-refundable and non-transferable after purchase."
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        tools:ignore="TextSizeCheck" />
+
+</LinearLayout>

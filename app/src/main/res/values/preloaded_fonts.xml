@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/cambay_bold</item>
+        <item>@font/croissant_one</item>
+        <item>@font/hind_siliguri</item>
+        <item>@font/kurale</item>
+        <item>@font/libre_baskerville</item>
+        <item>@font/lobster</item>
+        <item>@font/lobster_two_bold</item>
+        <item>@font/montserrat_extrabold</item>
+        <item>@font/playfair_display_sc_bold</item>
+        <item>@font/poppins</item>
+        <item>@font/poppins_bold</item>
+        <item>@font/roboto_bold</item>
+        <item>@font/source_sans_pro_bold</item>
+        <item>@font/volkhov_bold</item>
+    </array>
+</resources>

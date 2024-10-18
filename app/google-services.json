@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "477609388452",
+    "project_id": "gymesticapp",
+    "storage_bucket": "gymesticapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477609388452:android:6fe96bf1b9da5cbb69f931",
+        "android_client_info": {
+          "package_name": "com.example.gymesticapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgcsWiJKPhvhs_oRmthiTykdq8Y7zX2eI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

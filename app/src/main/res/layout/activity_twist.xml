@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    android:layout_gravity="bottom"
+    tools:context=".TwistActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@null"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageWorkout"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:foreground="@drawable/transparent_foreground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/twist"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Warm Up"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.74" />
+
+                <TextView
+                    android:id="@+id/tTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hind_siliguri"
+                    android:text="12 mins"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/tname"
+                    app:layout_constraintTop_toBottomOf="@+id/tname" />
+
+                <ImageView
+                    android:id="@+id/btnhome"
+                    android:layout_width="30dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.058"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/exerciseTitle"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:text="Exercises"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textbox_bg"
+                android:layout_height="100dp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/exerciseImage"
+                    android:layout_width="85dp"
+                    android:layout_height="90dp"
+                    app:lottie_rawRes="@raw/warmup2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:id="@+id/exerciseNo"
+                        android:layout_gravity="center"
+                        android:text="Exercise 1"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:id="@+id/exerciseName"
+                        android:layout_gravity="center"
+                        android:text="Warm Up"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/hind_siliguri"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:id="@+id/duration"
+                        android:layout_gravity="center"
+                        android:text="4 mins"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/hind_siliguri"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textbox_bg"
+                android:layout_height="100dp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/e2Ainm"
+                    android:layout_width="85dp"
+                    android:layout_height="90dp"
+                    app:lottie_rawRes="@raw/shoulderpress"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:id="@+id/exercise2"
+                        android:layout_gravity="center"
+                        android:text="Exercise 2"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:id="@+id/ename2"
+                        android:layout_gravity="center"
+                        android:text="Soulder Press"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/hind_siliguri"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:id="@+id/duration2"
+                        android:layout_gravity="center"
+                        android:text="4 mins"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/hind_siliguri"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textbox_bg"
+                android:layout_height="100dp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/exAnim3"
+                    android:layout_width="85dp"
+                    android:layout_height="90dp"
+                    app:lottie_rawRes="@raw/legsquats"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:id="@+id/exercise3"
+                        android:layout_gravity="center"
+                        android:text="Exercise 3"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:id="@+id/ename3"
+                        android:layout_gravity="center"
+                        android:text="Leg Squats"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/hind_siliguri"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:id="@+id/duration3"
+                        android:layout_gravity="center"
+                        android:text="4 mins"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/hind_siliguri"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

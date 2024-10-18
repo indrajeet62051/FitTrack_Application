@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Fragment.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbarThumbVertical="@null"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/background_profile" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    android:src="@drawable/userprofilepic"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="45dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="loading"
+                    android:textColorHint="@color/white"
+                    android:textColor="#ffffff"
+                    android:textSize="24dp"
+                    android:fontFamily="@font/poppins_bold"
+                    app:layout_constraintEnd_toEndOf="@+id/userImage"
+                    app:layout_constraintHorizontal_bias="0.494"
+                    app:layout_constraintStart_toStartOf="@+id/userImage"
+                    app:layout_constraintTop_toBottomOf="@+id/userImage" />
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="loading..."
+                    android:textColorHint="@color/white"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/poppins_bold"
+                    app:layout_constraintEnd_toEndOf="@+id/userName"
+                    app:layout_constraintStart_toStartOf="@+id/userName"
+                    app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/white_background"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtEmail">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:id="@+id/imgEditProfile"
+                            android:layout_weight="1"
+                            android:background="@drawable/top_button_background"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:layout_margin="10dp"
+                                app:srcCompat="@drawable/user_profile_pic" />
+
+                            <TextView
+                                android:id="@+id/textupProfile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text=" Edit "
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:id="@+id/settingBtn"
+                            android:layout_weight="1"
+                            android:background="@drawable/top_button_background"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgSetting"
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:layout_margin="10dp"
+                                app:srcCompat="@drawable/img_setting" />
+
+                            <TextView
+                                android:id="@+id/txtsetting"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="Settings"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:id="@+id/Feedback"
+                            android:layout_weight="1"
+                            android:background="@drawable/top_button_background"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgfeedback"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:layout_margin="10dp"
+                                app:srcCompat="@drawable/feedback" />
+
+                            <TextView
+                                android:id="@+id/txtFeedback"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="Feedback"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtmobileno"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Mobile No"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="4dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/userMobileNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingRight="4dp"
+                            android:hint="loading..."
+                            android:textStyle="bold"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/appCompatImageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:alpha="0.5"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textgender"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Gender"
+                            android:drawablePadding="10dp"
+                            android:paddingStart="4dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/userGender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="loading..."
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:paddingRight="4dp"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/appCompatImageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:alpha="0.5"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdate"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Birth Date"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="4dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/userBirtDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="loading.."
+                            android:textAlignment="viewEnd"
+                            android:paddingRight="4dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:alpha="0.5"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Weight"
+                            android:id="@+id/txtWeight"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="4dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/userWeight"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="loading..."
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/black"
+                            android:paddingRight="4dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="KG"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:paddingRight="4dp"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:alpha="0.5"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Height"
+                            android:id="@+id/txtHeight"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="4dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/userHeight"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="loading..."
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/black"
+                            android:paddingRight="4dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="CM"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/black"
+                            android:paddingRight="4dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:alpha="0.5"
+                        android:background="@color/gray" />
+
+                    <Button
+                        android:id="@+id/btnLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/back_color"
+                        android:backgroundTint="@color/darkblue"
+                        android:elevation="0dp"
+                        android:fontFamily="@font/hind_siliguri"
+                        android:gravity="center"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:text="LOGOUT"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.PlanFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEMBERSHIP"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_extrabold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@null"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="27dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:backgroundTint="#759CBC"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/navMembership"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/montserrat_extrabold"
+                        android:text="MEMBERSHIP NAME"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/icardimage"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        app:shapeAppearanceOverlay="@style/roundedImageView"
+                        android:src="@drawable/userprofilepic"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/iCardName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat_extrabold"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_gravity="center_horizontal">
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/montserrat_extrabold"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text=":"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:id="@+id/selectedTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="selected time"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/montserrat_extrabold"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/qrCodeImageView"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@color/darkblue"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rules and Regulation :"
+                        android:fontFamily="@font/montserrat_extrabold"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/kurale"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="Present QR code at entry.\nLimited to one scan per day.\nTampering or invalid codes will be rejected."
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gym Adderess :\nFittrack Gym, vesu, surat"
+                        android:fontFamily="@font/montserrat_extrabold"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:paddingStart="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingEnd="5dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/Ogp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:text="Offline Gym Programme"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarThumbVertical="@null"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:visibility="visible"
+                        android:id="@+id/cardplatinum"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:backgroundTint="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/titlePlatinum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/montserrat_extrabold"
+                                android:text="Platinum"
+                                android:textColor="@color/black"
+                                android:textSize="35sp"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <TextView
+                                android:id="@+id/infoPlatinum"
+                                android:layout_width="280dp"
+                                android:layout_height="290dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/kurale"
+                                android:text="- All Gold Membership benefits\n- Unlimited personalized fitness coaching sessions\n- Private locker and shower access\n- Complimentary upgrade to premium classes (e.g., yoga, Pilates)"
+                                android:textColor="@color/darkblue"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <Button
+                                android:id="@+id/btnPlatinum"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kurale"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:backgroundTint="@color/darkblue"
+                                android:text="only ₹11000/year"
+                                android:textSize="16sp"
+                                android:background="@drawable/bg2"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:visibility="visible"
+                        android:id="@+id/cardGold"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/titleGold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/montserrat_extrabold"
+                                android:text="Gold"
+                                android:textColor="@color/black"
+                                android:textSize="35sp"
+                                android:layout_gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/infoGold"
+                                android:layout_width="280dp"
+                                android:layout_height="290dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/kurale"
+                                android:text="- Priority access to new classes and workshops \n- Personalized fitness coaching sessions (2x/month)\n- Complimentary guest passes (2x/month)\n- 10% discount on merchandise and supplements"
+                                android:textColor="@color/darkblue"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <Button
+                                android:id="@+id/btnGold"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kurale"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:backgroundTint="@color/darkblue"
+                                android:text="only ₹8000/year"
+                                android:textSize="16sp"
+                                android:background="@drawable/bg2"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:visibility="visible"
+                        android:id="@+id/cardSilver"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:orientation="vertical"
+                            android:layout_marginEnd="10dp">
+
+                            <TextView
+                                android:id="@+id/titleSilver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/montserrat_extrabold"
+                                android:text="Silver"
+                                android:textColor="@color/black"
+                                android:textSize="35sp"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <TextView
+                                android:id="@+id/infoSilver"
+                                android:layout_width="280dp"
+                                android:layout_height="290dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/kurale"
+                                android:text="- Access to standard fitness classes\n- Limited access to premium classes (e.g., yoga, Pilates)\n- 5% discount on merchandise and supplements\n- Access to online fitness resources and community support"
+                                android:textColor="@color/darkblue"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <Button
+                                android:id="@+id/btnSilver"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kurale"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:backgroundTint="@color/darkblue"
+                                android:text="only 6500/year"
+                                android:textSize="16sp"
+                                android:background="@drawable/bg2"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

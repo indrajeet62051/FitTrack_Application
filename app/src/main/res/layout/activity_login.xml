@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarThumbVertical="@null"
+    android:scrollbars="none"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Hey there,"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/edLoginEmail"
+            android:layout_width="330dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/textbox_bg"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#9E9396"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/edLoginPassword"
+            android:layout_width="330dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/textbox_bg"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/poppins"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#9E9396"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:id="@+id/txtForgotpwd"
+            android:text="Forgot Password?"
+            android:textSize="16dp"
+            android:gravity="right"
+            android:paddingEnd="40dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/gray"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="330dp"
+            android:layout_height="55dp"
+            android:text="LOGIN"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:backgroundTint="@color/darkblue"
+            android:background="@drawable/back_color"
+            android:layout_marginTop="360dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center">
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="2dp"
+                android:layout_margin="20dp"
+                android:background="@color/gray"
+                tools:ignore="VisualLintBounds" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/hind_siliguri"
+                android:gravity="center_horizontal"
+                android:text="OR"
+                android:textColor="@color/gray"
+                android:textSize="18dp"
+                tools:ignore="TextSizeCheck" />
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="2dp"
+                android:layout_margin="20dp"
+                android:background="@color/gray"
+                tools:ignore="VisualLintBounds" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Don't have an account?"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:layout_marginStart="2dp"
+                android:id="@+id/txtRegister"
+                android:textColor="@color/darkblue"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
